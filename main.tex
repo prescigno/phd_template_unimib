@@ -1,0 +1,171 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{dirtytalk}
+\usepackage{color}
+\usepackage{calc}
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{dsfont}
+\usepackage{lipsum}
+\usepackage{tikz-feynman}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{MnSymbol}%\sumint
+\usepackage{wrapfig}
+\usepackage{textpos}
+\usepackage{biblatex}
+\usepackage[integrals]{wasysym}
+\addbibresource{bibliography/bibliography.bib}
+\usepackage{fancyhdr}
+%custom page style for report class
+\fancypagestyle{mystyle}{
+\pagestyle{fancy}
+\fancyhf{} % clear all headers      
+\fancyhead[R]{\rmfamily \small \nouppercase \rightmark}
+\fancyhead[L]{\rmfamily \small \nouppercase \leftmark}  
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\newcommand{\alert}[1]{{\color{red} #1}}
+
+
+% macros for fast scaling parentheses
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+
+\newcommand{\lsb}{\left[}
+\newcommand{\rsb}{\right]}
+
+\newcommand{\lcb}{\left\{}
+\newcommand{\rcb}{\right\}}
+
+\newcommand{\la}{\left\langle}
+\newcommand{\ra}{\right\rangle}
+\definecolor{red}{rgb}{0.631, 0.094, 0.094}
+\begin{document}
+
+%%% TITLE PAGE %%%
+
+\thispagestyle{empty}
+\begin{textblock*}{\textwidth}(-2cm,-2.5cm)
+\includegraphics[height=0.1\paperheight]{logos/Bicocca_transparent.png}	
+\end{textblock*}
+\begin{textblock*}{\textwidth}(1.9cm,-2.6cm)
+\begin{flushleft}
+{\color{red}\Large{SCUOLA DI DOTTORATO}}\\[2mm]
+{\color{red}\large{UNIVERSIT\`A DEGLI STUDI DI MILANO-BICOCCA}}
+\end{flushleft}
+\end{textblock*}
+\vspace{2cm}
+\centerline{\Large{Department of Physics \say{G. Occhialini}}}
+\vspace{0.5cm}
+\centerline{\Large{Ph. D. program in Physics and Astronomy, XVIII cycle}}
+\vspace{2mm}
+\centerline{\Large{Curriculum of Theoretical Physics}}
+\vspace{2cm}
+\centerline{\huge{ The non-static screening spectrum}}
+\centerline{\huge{of high-temperature Quantum Chromo-Dynamics}}
+\vspace{2cm}
+\centerline{\LARGE{Pietro Rescigno}}
+\vspace{2mm}
+\centerline{\Large{Registration number: 826333}}
+\vspace{2cm}
+\begin{flushleft}
+\LARGE{Tutor: Leonardo Giusti}\\[1.5mm]
+\LARGE{Supervisor: Marco Cè}\\[3cm]
+\LARGE{Coordinator: Stefano Ragazzi}
+\end{flushleft}
+\vfill
+
+\centerline{\LARGE{Academic Year 2025/2026}}
+%%%%%%%%%%%%%%%%%
+%%% ABSTRACT (Techincal)%%%%
+\begin{abstract}
+   A one-page \say{technical} abstract that summarizes
+   the research work, similar to the one in the 
+   paper on baryonic screening masses.	
+\end{abstract}
+%%% PUBLICATIONS %%%
+\pagenumbering{roman}
+
+{\centering
+{\Large\textbf{Scientific Output}}\\[5mm]
+\centerline{Here I list the works I have published and 
+my contributions to}
+\centerline{international conferences, either
+as a speaker or as an author.}
+\vspace{3mm}
+\centerline{Bibliometric information can be retrieved on my}
+\centerline{\href{https://inspirehep.net/authors/2727845?ui-citation-summary=true}{iNSPIRE} or \href{https://scholar.google.com/citations?user=3bmCuiAAAAAJ&hl=it}{Google Scholar} pages.}}
+
+
+% Name & headline
+
+%\switchcolumn
+\section*{List of publications}
+$\bullet$ L. Giusti, T. Harris, D. Laudicina, M. Pepe, PR, \textit{Baryonic screening masses in QCD at high temperature}, Phys. Lett. B 855 (2024) 138799,
+\href{https://doi.org/10.1016/j.physletb.2024.138799}{https://doi.org/10.1016/j.physletb.2024.138799}, \href{https://arxiv.org/abs/2405.04182}{arxiv:2405.04182}\\[5mm]
+$\bullet$ L. Giusti, M. Laine, D. Laudicina, M. Pepe, PR, \textit{Baryonic thermal screening mass at NLO}, JHEP 06 (2024) 205, \href{https://doi.org/10.1007/JHEP06(2024)205}{https://doi.org/10.1007/JHEP06(2024)205}, \href{https://arxiv.org/abs/2405.03975}{arxiv:2405.03975}
+
+\section*{Contributions to conferences}
+As a \textbf{speaker:}
+\begin{itemize}
+\item PR, L. Giusti, T. Harris, M. Laine, D. Laudicina, M. Pepe, \textit{Nucleon screening 
+masses in QCD at high temperature}, talk - Strong and
+Electroweak Matter 2024, Goethe Universit\"at Frankfurt, DE - \href{https://indico.physik.uni-bielefeld.de/event/100/contributions/226/}{Indico page} \\
+\item PR, L. Giusti, T. Harris, D. Laudicina, M. Pepe, \textit{Baryonic screening masses in 
+high temperature QCD}, talk -
+The 40$^{\rm th}$ International Symposium on Lattice Field Theory, Fermilab, USA - \href{https://pos.sissa.it/453/196/}{PoS(LATTICE2023)}
+\end{itemize}
+As an \textbf{author:}
+\begin{itemize}
+    \item L. Giusti, M. Bresciani, M. Dalla Brida, T. Harris, D. Laudicina, M. Pepe,
+    PR, \textit{Non-perturbative thermal QCD at very high temperatures: computational strategy and hadronic screening masses}, talk - The 41$^{\rm st}$ International Symposium on Lattice Field Theory, University of Liverpool, UK - to appear in 
+    \textit{Proceedings of Science} - \href{https://conference.ippp.dur.ac.uk/event/1265/contributions/7291/}{Indico page}
+    \item L. Giusti, M. Bresciani, M. Dalla Brida, T. Harris, D. Laudicina, M. Pepe,
+    PR, \textit{Non-perturbative thermal QCD at 
+    very high temperatures}, 
+    42$^{\rm nd}$ International Conference on High Energy Physics, Prague, CZ - to appear in \textit{Proceedings
+    of Science} - \href{https://arxiv.org/abs/2410.12626}{arXiv:2410.12626}
+\end{itemize}
+%%%%%%%%
+\tableofcontents
+\pagestyle{mystyle}
+
+\addcontentsline{toc}{chapter}{Introduction}
+\include{preface/preface}
+
+\pagenumbering{arabic}
+
+\include{chapter1/chapter1}
+
+\include{chapter2/chapter2}
+
+\include{chapter3/chapter3}
+
+\include{chapter4/chapter4}
+
+\addcontentsline{toc}{chapter}{Conclusions and Outlook}
+\include{conclusions/conclusions}
+
+\appendix
+\include{appendices/conventions}
+
+%%%% BIBLIOGRAPHY %%%%%
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
+
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\include{thankyou/thankyou}
+\end{document}
+
